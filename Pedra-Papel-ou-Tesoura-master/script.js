@@ -45,7 +45,7 @@ function JogarPapel() {
   }
 }
 function JogarPedra() {
-  jogador1.src = "/image/maos03.png";
+  jogador1.src = "/assets/image/maos03.png";
   if ((jogador2.src = "/assets/image/maos.png")) {
     msgJogador1.innerHTML = "Ganhou!";
     msgJogador2.innerHTML = "Perdeu!";
