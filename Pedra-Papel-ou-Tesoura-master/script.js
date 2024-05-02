@@ -5,19 +5,19 @@ const msgJogador1 = document.querySelector(".vez1");
 const msgJogador2 = document.querySelector(".vez2");
 
 function JogarTesoura() {
-  jogador1.src = "/Pedra-Papel-ou-Tesoura-master/assets/image/maos.png";
-  if ((jogador2.src = "/Pedra-Papel-ou-Tesoura-master/assets/image/maos.png")) {
+  jogador1.src = "/assets/image/maos.png";
+  if ((jogador2.src = "/assets/image/maos.png")) {
     msgJogador1.innerHTML = "Empate!";
     msgJogador2.innerHTML = "Empate!";
     aleatorio();
   } else if (
-    (jogador2.src = "/Pedra-Papel-ou-Tesoura-master/assets/image/maos02.png")
+    (jogador2.src = "/assets/image/maos02.png")
   ) {
     msgJogador1.innerHTML = "Ganhou!";
     msgJogador2.innerHTML = "Perdeu!";
     aleatorio();
   } else if (
-    (jogador2.src = "/Pedra-Papel-ou-Tesoura-master/assets/image/maos03.png")
+    (jogador2.src = "/assets/image/maos03.png")
   ) {
     msgJogador1.innerHTML = "Perdeu!";
     msgJogador2.innerHTML = "Ganhou!";
@@ -25,19 +25,19 @@ function JogarTesoura() {
   }
 }
 function JogarPapel() {
-  jogador1.src = "/Pedra-Papel-ou-Tesoura-master/assets/image/maos02.png";
-  if ((jogador2.src = "/Pedra-Papel-ou-Tesoura-master/assets/image/maos.png")) {
+  jogador1.src = "/assets/image/maos02.png";
+  if ((jogador2.src = "/assets/image/maos.png")) {
     msgJogador1.innerHTML = "Perdeu!";
     msgJogador2.innerHTML = "Ganhou!";
     aleatorio();
   } else if (
-    (jogador2.src = "/Pedra-Papel-ou-Tesoura-master/assets/image/maos02.png")
+    (jogador2.src = "/assets/image/maos02.png")
   ) {
     msgJogador1.innerHTML = "Empate!";
     msgJogador2.innerHTML = "Empate!";
     aleatorio();
   } else if (
-    (jogador2.src = "/Pedra-Papel-ou-Tesoura-master/assets/image/maos03.png")
+    (jogador2.src = "/assets/image/maos03.png")
   ) {
     msgJogador1.innerHTML = "Ganhou!";
     msgJogador2.innerHTML = "Perdeu!";
@@ -45,19 +45,19 @@ function JogarPapel() {
   }
 }
 function JogarPedra() {
-  jogador1.src = "/Pedra-Papel-ou-Tesoura-master/assets/image/maos03.png";
-  if ((jogador2.src = "/Pedra-Papel-ou-Tesoura-master/assets/image/maos.png")) {
+  jogador1.src = "/image/maos03.png";
+  if ((jogador2.src = "/assets/image/maos.png")) {
     msgJogador1.innerHTML = "Ganhou!";
     msgJogador2.innerHTML = "Perdeu!";
     aleatorio();
   } else if (
-    (jogador2.src = "/Pedra-Papel-ou-Tesoura-master/assets/image/maos02.png")
+    (jogador2.src = "/assets/image/maos02.png")
   ) {
     msgJogador1.innerHTML = "Perdeu!";
     msgJogador2.innerHTML = "Ganhou!";
     aleatorio();
   } else if (
-    (jogador2.src = "/Pedra-Papel-ou-Tesoura-master/assets/image/maos03.png")
+    (jogador2.src = "/assets/image/maos03.png")
   ) {
     msgJogador1.innerHTML = "Empate!";
     msgJogador2.innerHTML = "Empate!";
@@ -71,9 +71,9 @@ const pedraJogador2 = document.querySelector(".pedra2");
 function aleatorio() {
   const random = (min, max) => Math.floor(Math.random() * (max - min) + min);
   let arr = [
-    "/Pedra-Papel-ou-Tesoura-master/assets/image/maos.png",
-    "/Pedra-Papel-ou-Tesoura-master/assets/image/maos02.png",
-    "/Pedra-Papel-ou-Tesoura-master/assets/image/maos03.png",
+    "/assets/image/maos.png",
+    "/assets/image/maos02.png",
+    "/assets/image/maos03.png",
   ];
   let ran = arr[random(0, arr.length)];
   msgJogador2.innerHTML = "";
