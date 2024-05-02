@@ -15,6 +15,7 @@ body{
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to right top, #2f228c, #532287, #6b2583, #7d2b7e, #8c337a);
+    background-size: 100% 200%;
 }
 .container{
     width: 100%;
@@ -22,6 +23,14 @@ body{
     justify-content: space-around;
     align-items: center;
     gap: 10px;
+}
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+  body {
+    height: 150%;
+  }
 }
 .container > section{
     width: 300px;
